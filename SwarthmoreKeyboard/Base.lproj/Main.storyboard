@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwarthmoreKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CODED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXh-Nh-RIo">
+                                <rect key="frame" x="20" y="55" width="560" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Try typing here!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jSL-fG-0Df">
+                                <rect key="frame" x="50" y="108" width="500" height="135"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="0og-Cw-Dp0"/>
+                                    <constraint firstAttribute="height" constant="135" id="cIJ-fJ-DBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0og-Cw-Dp0"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtN-63-fLI">
+                                <rect key="frame" x="20" y="283" width="560" height="38"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="DECODE"/>
+                                <connections>
+                                    <action selector="decodeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQn-c3-4g1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jSL-fG-0Df" secondAttribute="trailing" constant="30" id="0r1-lb-OlE"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="2JD-sg-eyg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sXh-Nh-RIo" secondAttribute="trailing" id="8lz-5i-jdr"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J1a-Pp-hbt"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MMy-Iq-btj"/>
+                            <constraint firstItem="NtN-63-fLI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mwd-7f-bJ3"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N9k-ZW-zOM"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NfC-hg-gds"/>
+                            <constraint firstItem="NtN-63-fLI" firstAttribute="top" secondItem="jSL-fG-0Df" secondAttribute="bottom" constant="30" id="Oz6-M1-CnY"/>
+                            <constraint firstItem="jSL-fG-0Df" firstAttribute="top" secondItem="sXh-Nh-RIo" secondAttribute="bottom" constant="30" id="PF5-nj-AMv"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="TbE-MQ-bNC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NtN-63-fLI" secondAttribute="trailing" id="e6g-7e-lkS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jSL-fG-0Df" secondAttribute="bottom" constant="357" id="k5V-CZ-gqe"/>
+                            <constraint firstItem="jSL-fG-0Df" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="kOo-Qw-OPp"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="mFY-af-R1d"/>
+                            <constraint firstItem="sXh-Nh-RIo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="n9e-Mh-m2i"/>
+                            <constraint firstItem="jSL-fG-0Df" firstAttribute="top" secondItem="sXh-Nh-RIo" secondAttribute="bottom" constant="32" id="nAf-gK-Jks"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2JD-sg-eyg"/>
+                                <exclude reference="8lz-5i-jdr"/>
+                                <exclude reference="J1a-Pp-hbt"/>
+                                <exclude reference="MMy-Iq-btj"/>
+                                <exclude reference="N9k-ZW-zOM"/>
+                                <exclude reference="mFY-af-R1d"/>
+                                <exclude reference="nAf-gK-Jks"/>
+                                <exclude reference="k5V-CZ-gqe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="typedMessageTextView" destination="jSL-fG-0Df" id="yjd-0W-tF0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="418" y="321"/>
+        </scene>
+    </scenes>
+</document>

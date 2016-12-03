@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFA54C1E1DF333F4005C9A4A /* untitled-font-2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFA54C1D1DF333D8005C9A4A /* untitled-font-2.ttf */; };
+		DFA54C201DF3472C005C9A4A /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA54C1F1DF3472C005C9A4A /* KeyboardView.xib */; };
+		DFA54C221DF359E7005C9A4A /* Apple Symbols.ttc in Resources */ = {isa = PBXBuildFile; fileRef = DFA54C211DF359B3005C9A4A /* Apple Symbols.ttc */; };
+		DFD4F7391DF31B52002F28F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4F7381DF31B52002F28F9 /* AppDelegate.swift */; };
+		DFD4F73B1DF31B52002F28F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4F73A1DF31B52002F28F9 /* ViewController.swift */; };
+		DFD4F73E1DF31B52002F28F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD4F73C1DF31B52002F28F9 /* Main.storyboard */; };
+		DFD4F7401DF31B52002F28F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD4F73F1DF31B52002F28F9 /* Assets.xcassets */; };
+		DFD4F7431DF31B52002F28F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD4F7411DF31B52002F28F9 /* LaunchScreen.storyboard */; };
+		DFD4F7511DF31C60002F28F9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4F7501DF31C60002F28F9 /* KeyboardViewController.swift */; };
+		DFD4F7551DF31C60002F28F9 /* imagekeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFD4F74E1DF31C60002F28F9 /* imagekeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFD4F7531DF31C60002F28F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD4F72D1DF31B52002F28F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFD4F74D1DF31C60002F28F9;
+			remoteInfo = imagekeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFD4F7591DF31C60002F28F9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFD4F7551DF31C60002F28F9 /* imagekeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFA54C1D1DF333D8005C9A4A /* untitled-font-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "untitled-font-2.ttf"; sourceTree = "<group>"; };
+		DFA54C1F1DF3472C005C9A4A /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		DFA54C211DF359B3005C9A4A /* Apple Symbols.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Symbols.ttc"; sourceTree = "<group>"; };
+		DFD4F7351DF31B52002F28F9 /* SwarthmoreKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwarthmoreKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD4F7381DF31B52002F28F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFD4F73A1DF31B52002F28F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFD4F73D1DF31B52002F28F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFD4F73F1DF31B52002F28F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFD4F7421DF31B52002F28F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFD4F7441DF31B52002F28F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD4F74E1DF31C60002F28F9 /* imagekeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = imagekeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD4F7501DF31C60002F28F9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		DFD4F7521DF31C60002F28F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFD4F7321DF31B52002F28F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD4F74B1DF31C60002F28F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFD4F72C1DF31B52002F28F9 = {
+			isa = PBXGroup;
+			children = (
+				DFD4F7371DF31B52002F28F9 /* SwarthmoreKeyboard */,
+				DFD4F74F1DF31C60002F28F9 /* imagekeyboard */,
+				DFD4F7361DF31B52002F28F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFD4F7361DF31B52002F28F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4F7351DF31B52002F28F9 /* SwarthmoreKeyboard.app */,
+				DFD4F74E1DF31C60002F28F9 /* imagekeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFD4F7371DF31B52002F28F9 /* SwarthmoreKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4F7381DF31B52002F28F9 /* AppDelegate.swift */,
+				DFD4F73A1DF31B52002F28F9 /* ViewController.swift */,
+				DFD4F73C1DF31B52002F28F9 /* Main.storyboard */,
+				DFD4F73F1DF31B52002F28F9 /* Assets.xcassets */,
+				DFD4F7411DF31B52002F28F9 /* LaunchScreen.storyboard */,
+				DFD4F7441DF31B52002F28F9 /* Info.plist */,
+			);
+			path = SwarthmoreKeyboard;
+			sourceTree = "<group>";
+		};
+		DFD4F74F1DF31C60002F28F9 /* imagekeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DFA54C211DF359B3005C9A4A /* Apple Symbols.ttc */,
+				DFA54C1D1DF333D8005C9A4A /* untitled-font-2.ttf */,
+				DFD4F7501DF31C60002F28F9 /* KeyboardViewController.swift */,
+				DFA54C1F1DF3472C005C9A4A /* KeyboardView.xib */,
+				DFD4F7521DF31C60002F28F9 /* Info.plist */,
+			);
+			path = imagekeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFD4F7341DF31B52002F28F9 /* SwarthmoreKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFD4F7471DF31B52002F28F9 /* Build configuration list for PBXNativeTarget "SwarthmoreKeyboard" */;
+			buildPhases = (
+				DFD4F7311DF31B52002F28F9 /* Sources */,
+				DFD4F7321DF31B52002F28F9 /* Frameworks */,
+				DFD4F7331DF31B52002F28F9 /* Resources */,
+				DFD4F7591DF31C60002F28F9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFD4F7541DF31C60002F28F9 /* PBXTargetDependency */,
+			);
+			name = SwarthmoreKeyboard;
+			productName = SwarthmoreKeyboard;
+			productReference = DFD4F7351DF31B52002F28F9 /* SwarthmoreKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFD4F74D1DF31C60002F28F9 /* imagekeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFD4F7561DF31C60002F28F9 /* Build configuration list for PBXNativeTarget "imagekeyboard" */;
+			buildPhases = (
+				DFD4F74A1DF31C60002F28F9 /* Sources */,
+				DFD4F74B1DF31C60002F28F9 /* Frameworks */,
+				DFD4F74C1DF31C60002F28F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imagekeyboard;
+			productName = imagekeyboard;
+			productReference = DFD4F74E1DF31C60002F28F9 /* imagekeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFD4F72D1DF31B52002F28F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Cassandra Stone";
+				TargetAttributes = {
+					DFD4F7341DF31B52002F28F9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DFD4F74D1DF31C60002F28F9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DFD4F7301DF31B52002F28F9 /* Build configuration list for PBXProject "SwarthmoreKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFD4F72C1DF31B52002F28F9;
+			productRefGroup = DFD4F7361DF31B52002F28F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFD4F7341DF31B52002F28F9 /* SwarthmoreKeyboard */,
+				DFD4F74D1DF31C60002F28F9 /* imagekeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFD4F7331DF31B52002F28F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA54C221DF359E7005C9A4A /* Apple Symbols.ttc in Resources */,
+				DFD4F7431DF31B52002F28F9 /* LaunchScreen.storyboard in Resources */,
+				DFD4F7401DF31B52002F28F9 /* Assets.xcassets in Resources */,
+				DFD4F73E1DF31B52002F28F9 /* Main.storyboard in Resources */,
+				DFA54C1E1DF333F4005C9A4A /* untitled-font-2.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD4F74C1DF31C60002F28F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA54C201DF3472C005C9A4A /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFD4F7311DF31B52002F28F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD4F73B1DF31B52002F28F9 /* ViewController.swift in Sources */,
+				DFD4F7391DF31B52002F28F9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD4F74A1DF31C60002F28F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD4F7511DF31C60002F28F9 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFD4F7541DF31C60002F28F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFD4F74D1DF31C60002F28F9 /* imagekeyboard */;
+			targetProxy = DFD4F7531DF31C60002F28F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFD4F73C1DF31B52002F28F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFD4F73D1DF31B52002F28F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFD4F7411DF31B52002F28F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFD4F7421DF31B52002F28F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFD4F7451DF31B52002F28F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFD4F7461DF31B52002F28F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFD4F7481DF31B52002F28F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwarthmoreKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassandras.SwarthmoreKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFD4F7491DF31B52002F28F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwarthmoreKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassandras.SwarthmoreKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DFD4F7571DF31C60002F28F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = imagekeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassandras.SwarthmoreKeyboard.imagekeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DFD4F7581DF31C60002F28F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = imagekeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cassandras.SwarthmoreKeyboard.imagekeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFD4F7301DF31B52002F28F9 /* Build configuration list for PBXProject "SwarthmoreKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD4F7451DF31B52002F28F9 /* Debug */,
+				DFD4F7461DF31B52002F28F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFD4F7471DF31B52002F28F9 /* Build configuration list for PBXNativeTarget "SwarthmoreKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD4F7481DF31B52002F28F9 /* Debug */,
+				DFD4F7491DF31B52002F28F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFD4F7561DF31C60002F28F9 /* Build configuration list for PBXNativeTarget "imagekeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD4F7571DF31C60002F28F9 /* Debug */,
+				DFD4F7581DF31C60002F28F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFD4F72D1DF31B52002F28F9 /* Project object */;
+}
