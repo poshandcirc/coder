@@ -28,13 +28,14 @@ class ViewController: UIViewController {
         var uncodedString = ""
         let codedMess = typedMessageTextView.text!
         print(codedMess)
-        let backwardsMess = codedMess.characters.reverse()
-        for char in backwardsMess {
-            if char == "\u{0000}" {
-                counter += 1
-            }
-        }
-        print(counter)
+//        let backwardsMess = codedMess.characters.reverse()
+//        for char in backwardsMess {
+//            if char == "\u{0000}" {
+//                counter += 1
+//            }
+//        }
+//        print(counter)
+        counter = 6
         
         let alphabetArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
         for char in codedMess.characters {
@@ -43,13 +44,12 @@ class ViewController: UIViewController {
                     indexCount += 1;
                 }
             }
-            print(indexCount)
-            
             if ((indexCount - counter) >= 0) {
                 uncodedString += alphabetArray[indexCount - counter]
             } else {
                 uncodedString += alphabetArray[indexCount - counter + 25]
             }
+            indexCount = 0
         }
         typedMessageTextView.text = uncodedString
     }

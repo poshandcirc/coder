@@ -11,7 +11,8 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
 
     @IBOutlet var nextKeyboardButton: UIButton!
-    var randomGen = Int(arc4random_uniform(24) + 1)
+//    var randomGen = Int(arc4random_uniform(24) + 1)
+    var randomGen = 6
     var decoder = ""
 
     override func updateViewConstraints() {
@@ -47,15 +48,6 @@ class KeyboardViewController: UIInputViewController {
             decoder += "\u{0000}"
             count -= 1
         }
-        
-        var counter = 0
-        
-        for char in decoder.characters {
-            if char == "\u{0000}" {
-                counter += 1
-            }
-        }
-        print(counter)
         
         let button = sender as! UIButton
         let title = button.titleForState(.Normal)
@@ -114,19 +106,19 @@ class KeyboardViewController: UIInputViewController {
         let objects = nib.instantiateWithOwner(self, options: nil)
         view = objects[0] as! UIView;
     
-        // Perform custom UI setup here
-        self.nextKeyboardButton = UIButton(type: .System)
-    
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-    
-        self.nextKeyboardButton.addTarget(self, action: #selector(advanceToNextInputMode), forControlEvents: .TouchUpInside)
-        
-        self.view.addSubview(self.nextKeyboardButton)
-    
-        self.nextKeyboardButton.leftAnchor.constraintEqualToAnchor(self.view.leftAnchor).active = true
-        self.nextKeyboardButton.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
+//        // Perform custom UI setup here
+//        self.nextKeyboardButton = UIButton(type: .System)
+//    
+//        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
+//        self.nextKeyboardButton.sizeToFit()
+//        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
+//    
+//        self.nextKeyboardButton.addTarget(self, action: #selector(advanceToNextInputMode), forControlEvents: .TouchUpInside)
+//        
+//        self.view.addSubview(self.nextKeyboardButton)
+//    
+//        self.nextKeyboardButton.leftAnchor.constraintEqualToAnchor(self.view.leftAnchor).active = true
+//        self.nextKeyboardButton.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor).active = true
         
         let buttonTitles = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"]
         let buttonTitles1 = ["A", "S", "D", "F", "G", "H", "K", "L"]
@@ -199,7 +191,7 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.blackColor()
         }
-        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+//        self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
     }
 
 }
